@@ -9,6 +9,28 @@ while True:
              'b': len(os.listdir(directory+"/B")),
              'c': len(os.listdir(directory+"/C")),
              'd': len(os.listdir(directory+"/D")),
+             'e': len(os.listdir(directory + "/E")),
+             'f': len(os.listdir(directory + "/F")),
+             'g': len(os.listdir(directory + "/G")),
+             'h': len(os.listdir(directory + "/H")),
+             'i': len(os.listdir(directory + "/I")),
+             'j': len(os.listdir(directory + "/J")),
+             'k': len(os.listdir(directory + "/K")),
+             'l': len(os.listdir(directory + "/L")),
+             'm': len(os.listdir(directory + "/M")),
+             'n': len(os.listdir(directory + "/N")),
+             'o': len(os.listdir(directory + "/O")),
+             'p': len(os.listdir(directory + "/P")),
+             'q': len(os.listdir(directory + "/Q")),
+             'r': len(os.listdir(directory + "/R")),
+             's': len(os.listdir(directory + "/S")),
+             't': len(os.listdir(directory + "/T")),
+             'u': len(os.listdir(directory + "/U")),
+             'v': len(os.listdir(directory + "/V")),
+             'w': len(os.listdir(directory + "/W")),
+             'x': len(os.listdir(directory + "/X")),
+             'y': len(os.listdir(directory + "/Y")),
+
              '1': len(os.listdir(directory+"/1")),
              '2': len(os.listdir(directory+"/2")),
              '3': len(os.listdir(directory+"/3")),
@@ -30,6 +52,49 @@ while True:
         cv2.imwrite(directory+'C/'+str(count['c'])+'.png',frame)
     if interrupt & 0xFF == ord('d'):
         cv2.imwrite(directory+'D/'+str(count['d'])+'.png',frame)
+    if interrupt & 0xFF == ord('e'):
+        cv2.imwrite(directory + 'E/' + str(count['e']) + '.png', frame)
+    if interrupt & 0xFF == ord('f'):
+        cv2.imwrite(directory + 'F/' + str(count['f']) + '.png', frame)
+    if interrupt & 0xFF == ord('g'):
+        cv2.imwrite(directory + 'G/' + str(count['g']) + '.png', frame)
+    if interrupt & 0xFF == ord('h'):
+        cv2.imwrite(directory + 'H/' + str(count['h']) + '.png', frame)
+    if interrupt & 0xFF == ord('i'):
+        cv2.imwrite(directory + 'I/' + str(count['i']) + '.png', frame)
+    if interrupt & 0xFF == ord('j'):
+        cv2.imwrite(directory + 'J/' + str(count['j']) + '.png', frame)
+    if interrupt & 0xFF == ord('k'):
+        cv2.imwrite(directory + 'K/' + str(count['k']) + '.png', frame)
+    if interrupt & 0xFF == ord('l'):
+        cv2.imwrite(directory + 'L/' + str(count['l']) + '.png', frame)
+    if interrupt & 0xFF == ord('m'):
+        cv2.imwrite(directory + 'M/' + str(count['m']) + '.png', frame)
+    if interrupt & 0xFF == ord('n'):
+        cv2.imwrite(directory + 'N/' + str(count['n']) + '.png', frame)
+    if interrupt & 0xFF == ord('o'):
+        cv2.imwrite(directory + 'O/' + str(count['o']) + '.png', frame)
+    if interrupt & 0xFF == ord('p'):
+        cv2.imwrite(directory + 'P/' + str(count['p']) + '.png', frame)
+    if interrupt & 0xFF == ord('q'):
+        cv2.imwrite(directory + 'Q/' + str(count['q']) + '.png', frame)
+    if interrupt & 0xFF == ord('r'):
+        cv2.imwrite(directory + 'R/' + str(count['r']) + '.png', frame)
+    if interrupt & 0xFF == ord('s'):
+        cv2.imwrite(directory + 'S/' + str(count['s']) + '.png', frame)
+    if interrupt & 0xFF == ord('t'):
+        cv2.imwrite(directory + 'T/' + str(count['t']) + '.png', frame)
+    if interrupt & 0xFF == ord('u'):
+        cv2.imwrite(directory + 'U/' + str(count['u']) + '.png', frame)
+    if interrupt & 0xFF == ord('v'):
+        cv2.imwrite(directory + 'V/' + str(count['v']) + '.png', frame)
+    if interrupt & 0xFF == ord('w'):
+        cv2.imwrite(directory + 'W/' + str(count['w']) + '.png', frame)
+    if interrupt & 0xFF == ord('x'):
+        cv2.imwrite(directory + 'X/' + str(count['x']) + '.png', frame)
+    if interrupt & 0xFF == ord('y'):
+        cv2.imwrite(directory + 'Y/' + str(count['y']) + '.png', frame)
+
     if interrupt & 0xFF == ord('1'):
         cv2.imwrite(directory+'1/'+str(count['1'])+'.png',frame)
     if interrupt & 0xFF == ord('2'):
