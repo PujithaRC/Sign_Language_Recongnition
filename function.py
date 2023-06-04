@@ -36,7 +36,7 @@ def extract_keypoints(results):
 # Path for exported data, numpy arrays
 DATA_PATH = os.path.join('MP_Data')
 
-actions = np.array(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','1','2','3'])
+actions = np.array(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','1','2','3', '4', '5', '6', '7', '8', '9'])
 #number of sequences of each hand gesture that will be captured
 #actions = np.array(['M'])
 no_sequences = 30
