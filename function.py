@@ -1,8 +1,9 @@
 import cv2
 import numpy as np
 import os
-import mediapipe as mp
+import mediapipe as mp #handtracking
 
+#MediaPipe library for drawing landmarks and connections on the image and for hand tracking
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
@@ -36,9 +37,9 @@ def extract_keypoints(results):
 # Path for exported data, numpy arrays
 DATA_PATH = os.path.join('MP_Data')
 
-actions = np.array(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','1','2','3', '4', '5', '6', '7', '8', '9'])
+actions = np.array(['A','B','C','D','E','F','G','H','I','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y'])
 #number of sequences of each hand gesture that will be captured
-#actions = np.array(['M'])
+#actions = np.array(['Y'])
 no_sequences = 30
 #number of frames to be captured for each sequence
 sequence_length = 30
